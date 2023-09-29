@@ -1,5 +1,7 @@
 networks:
   loki: {}
+volumes:
+  grafana-storage: {}
 services:
   cadvisor:
     container_name: cadvisor

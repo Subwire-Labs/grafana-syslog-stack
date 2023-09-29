@@ -36,7 +36,7 @@ services:
     container_name: loki
     depends_on:
       - minio
-    image: grafana/loki:latest
+    image: grafana/loki:2.3.0
     networks:
       loki: null
     ports:
@@ -102,7 +102,7 @@ services:
   promtail:
     command: -config.file=/etc/promtail/promtail-config.yml
     container_name: promtail
-    image: grafana/promtail:latest
+    image: grafana/promtail:2.3.0
     networks:
       loki: null
     ports:

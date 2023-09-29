@@ -36,6 +36,8 @@ From that directory, run the docker-compose command:
 
 **Full Example Stack:** Grafana, Loki with s3/MinIO, Promtail, syslog-ng, Prometheus, cAdvisor, node-exporter
 
+    docker volume create grafana-storage
+
     docker-compose -f ./docker-compose.yml up -d
 
 This will start to download all of the needed application containers and start them up. 
